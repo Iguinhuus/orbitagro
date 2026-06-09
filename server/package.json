@@ -1,0 +1,14 @@
+{
+  "name": "orbitagro-api",
+  "version": "1.0.0",
+  "description": "API REST do OrbitAgro — Global Solution 2026/1 FIAP",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4",
+    "cors": "^2.8.5"
+  }
+}

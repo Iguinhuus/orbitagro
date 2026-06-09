@@ -1,0 +1,171 @@
+{
+  "culturas": [
+    {
+      "id": 1,
+      "nome": "Soja Meridional",
+      "tipo": "grãos",
+      "area": 1200,
+      "localizacao": "Londrina, PR",
+      "status": "ativa",
+      "coordenadas": {
+        "latitude": -23.3045,
+        "longitude": -51.1696
+      },
+      "dataPlantio": "2026-02-15",
+      "ultimaAtualizacao": "2026-06-01T10:30:00Z",
+      "descricao": "Plantação de soja monitorada via satélite Sentinel-2. Índice NDVI estável em 0.82, indicando boa saúde vegetativa. Irrigação controlada por sensores IoT integrados com dados pluviométricos orbitais."
+    },
+    {
+      "id": 2,
+      "nome": "Milho Cerrado Central",
+      "tipo": "cereais",
+      "area": 850,
+      "localizacao": "Uberlândia, MG",
+      "status": "alerta",
+      "coordenadas": {
+        "latitude": -18.9186,
+        "longitude": -48.2772
+      },
+      "dataPlantio": "2026-01-20",
+      "ultimaAtualizacao": "2026-06-02T08:15:00Z",
+      "descricao": "Área de milho safrinha com alerta de estresse hídrico detectado por imagens termais do satélite Landsat-8. Recomendação de aumento na frequência de irrigação nos próximos 15 dias."
+    },
+    {
+      "id": 3,
+      "nome": "Café Arábica Sul de Minas",
+      "tipo": "frutas",
+      "area": 320,
+      "localizacao": "Alfenas, MG",
+      "status": "ativa",
+      "coordenadas": {
+        "latitude": -21.4292,
+        "longitude": -45.9475
+      },
+      "dataPlantio": "2025-09-10",
+      "ultimaAtualizacao": "2026-06-03T14:00:00Z",
+      "descricao": "Cultivo de café arábica com monitoramento de altitude e microclima via dados do satélite CBERS-4A. Produtividade estimada acima da média regional com base na análise espectral."
+    },
+    {
+      "id": 4,
+      "nome": "Arroz Irrigado Campanha",
+      "tipo": "cereais",
+      "area": 2100,
+      "localizacao": "Bagé, RS",
+      "status": "ativa",
+      "coordenadas": {
+        "latitude": -31.3289,
+        "longitude": -54.1069
+      },
+      "dataPlantio": "2025-11-05",
+      "ultimaAtualizacao": "2026-06-01T16:45:00Z",
+      "descricao": "Lavoura de arroz irrigado com controle de nível d'água automatizado. Imagens SAR do satélite Sentinel-1 utilizadas para mapear áreas alagadas e otimizar o manejo hídrico."
+    },
+    {
+      "id": 5,
+      "nome": "Tomate Hidropônico Atibaia",
+      "tipo": "hortaliças",
+      "area": 15,
+      "localizacao": "Atibaia, SP",
+      "status": "inativa",
+      "coordenadas": {
+        "latitude": -23.1171,
+        "longitude": -46.5563
+      },
+      "dataPlantio": "2026-03-01",
+      "ultimaAtualizacao": "2026-05-28T09:20:00Z",
+      "descricao": "Estufa de tomate com cultivo hidropônico monitorado por sensores de temperatura e umidade. Dados meteorológicos de satélites geoestacionários utilizados para previsão de demanda energética."
+    },
+    {
+      "id": 6,
+      "nome": "Feijão Carioca Goiás",
+      "tipo": "leguminosas",
+      "area": 480,
+      "localizacao": "Anápolis, GO",
+      "status": "ativa",
+      "coordenadas": {
+        "latitude": -16.3281,
+        "longitude": -48.953
+      },
+      "dataPlantio": "2026-04-10",
+      "ultimaAtualizacao": "2026-06-04T11:00:00Z",
+      "descricao": "Plantação de feijão carioca com análise de solo remota via espectrometria orbital. Sistema de alerta de pragas baseado em padrões identificados por IA aplicada a imagens multiespectrais."
+    },
+    {
+      "nome": "Manga Tommy Atkins",
+      "tipo": "frutas",
+      "area": 250,
+      "localizacao": "Petrolina, PE",
+      "status": "ativa",
+      "coordenadas": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "dataPlantio": "",
+      "descricao": "Cultivo de manga irrigada no Vale do Sao Francisco",
+      "ultimaAtualizacao": "2026-06-09T05:20:17.302Z",
+      "id": 7
+    }
+  ],
+  "alertas": [
+    {
+      "id": 1,
+      "titulo": "Seca Prolongada no Cerrado",
+      "categoria": "seca",
+      "severidade": "alta",
+      "mensagem": "Dados do satélite GOES-16 indicam déficit hídrico severo na região central do cerrado goiano. Índice de umidade do solo 40% abaixo da média histórica. Recomenda-se ativação imediata de sistemas de irrigação suplementar.",
+      "regiao": "Goiás - Centro-Oeste",
+      "dataEmissao": "2026-06-04T08:00:00Z",
+      "ativo": true
+    },
+    {
+      "id": 2,
+      "titulo": "Risco de Geada no Sul",
+      "categoria": "geada",
+      "severidade": "critica",
+      "mensagem": "Modelos meteorológicos alimentados por dados dos satélites MetOp confirmam massa polar intensa avançando sobre o Rio Grande do Sul. Temperaturas podem chegar a -3°C nas regiões de altitude. Cobertura de culturas sensíveis é urgente.",
+      "regiao": "Rio Grande do Sul - Sul",
+      "dataEmissao": "2026-06-03T22:30:00Z",
+      "ativo": true
+    },
+    {
+      "id": 3,
+      "titulo": "Chuva Intensa no Litoral Paulista",
+      "categoria": "chuva_intensa",
+      "severidade": "media",
+      "mensagem": "Imagens do radar meteorológico orbital GPM detectam formação de sistema convectivo sobre o litoral de São Paulo. Previsão de acumulados acima de 80mm em 24h. Monitorar drenagem em áreas de várzea.",
+      "regiao": "São Paulo - Sudeste",
+      "dataEmissao": "2026-06-02T15:00:00Z",
+      "ativo": true
+    },
+    {
+      "id": 4,
+      "titulo": "Vendaval em Mato Grosso",
+      "categoria": "vendaval",
+      "severidade": "media",
+      "mensagem": "Sensores atmosféricos do satélite Aeolus detectaram correntes descendentes de até 90 km/h na região norte de Mato Grosso. Risco de acamamento em lavouras de milho e soja em estágio avançado.",
+      "regiao": "Mato Grosso - Centro-Oeste",
+      "dataEmissao": "2026-06-01T12:00:00Z",
+      "ativo": false
+    },
+    {
+      "id": 5,
+      "titulo": "Foco de Incêndio no Pantanal",
+      "categoria": "incendio",
+      "severidade": "critica",
+      "mensagem": "Satélites VIIRS e MODIS identificaram 23 novos focos de calor na região do Pantanal sul-mato-grossense. Umidade relativa abaixo de 15% com ventos de até 45 km/h. Brigadas de combate já foram acionadas.",
+      "regiao": "Mato Grosso do Sul - Centro-Oeste",
+      "dataEmissao": "2026-05-30T10:00:00Z",
+      "ativo": true
+    }
+  ],
+  "contatos": [
+    {
+      "nome": "Teste",
+      "email": "teste@teste.com",
+      "assunto": "Dúvida sobre o projeto",
+      "mensagem": "Mensagem de teste para verificar integracao com API",
+      "dataEnvio": "2026-06-09T05:21:13.846Z",
+      "id": 1
+    }
+  ]
+}
