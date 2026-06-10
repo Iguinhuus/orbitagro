@@ -6,14 +6,9 @@ import type {
   ApiResponse,
 } from "../types";
 
-// URL base da API — em desenvolvimento aponta para json-server local
-// Em produção, aponta para a API publicada no Render
 const API_BASE_URL =
-  import.meta.env.VITE_API_URL || "http://localhost:3001";
-
-// ============================
-// Função genérica de requisição com fetch
-// ============================
+  import.meta.env.VITE_API_URL ||
+  (import.meta.env.DEV ? "http://localhost:3001" : "/api");
 
 async function request<T>(
   endpoint: string,
@@ -54,9 +49,7 @@ async function request<T>(
   }
 }
 
-// ============================
-// CRUD — Culturas
-// ============================
+
 
 export async function getCulturas(): Promise<ApiResponse<Cultura[]>> {
   return request<Cultura[]>("/culturas");
@@ -93,9 +86,7 @@ export async function deleteCultura(
   return request<null>(`/culturas/${id}`, { method: "DELETE" });
 }
 
-// ============================
-// CRUD — Alertas
-// ============================
+
 
 export async function getAlertas(): Promise<ApiResponse<Alerta[]>> {
   return request<Alerta[]>("/alertas");
@@ -107,9 +98,7 @@ export async function getAlertaById(
   return request<Alerta>(`/alertas/${id}`);
 }
 
-// ============================
-// Contato
-// ============================
+
 
 export async function enviarContato(
   dados: ContatoForm

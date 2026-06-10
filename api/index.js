@@ -3,10 +3,8 @@ const cors = require("cors");
 const path = require("path");
 
 const server = jsonServer.create();
-const router = jsonServer.router(path.join(__dirname, "db.json"));
+const router = jsonServer.router(path.join(process.cwd(), "server", "db.json"));
 const middlewares = jsonServer.defaults();
-
-const PORT = process.env.PORT || 3001;
 
 server.use(
   cors({
@@ -17,9 +15,9 @@ server.use(
 );
 
 server.use(middlewares);
-
 server.use(jsonServer.bodyParser);
-server.use((req, _res, next) => {
+
+server.use((req, res, next) => {
   if (
     req.path.startsWith("/culturas") &&
     (req.method === "POST" || req.method === "PUT")
@@ -34,15 +32,4 @@ server.use((req, _res, next) => {
 
 server.use(router);
 
-server.listen(PORT, () => {
-  console.log(`OrbitAgro API rodando na porta ${PORT}`);
-  console.log(`Endpoints disponíveis:`);
-  console.log(`  GET    /culturas`);
-  console.log(`  GET    /culturas/:id`);
-  console.log(`  POST   /culturas`);
-  console.log(`  PUT    /culturas/:id`);
-  console.log(`  DELETE /culturas/:id`);
-  console.log(`  GET    /alertas`);
-  console.log(`  GET    /alertas/:id`);
-  console.log(`  POST   /contatos`);
-});
+module.exports = server;

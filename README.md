@@ -173,9 +173,9 @@ npm run preview
 
 | Recurso | Link |
 |---|---|
-| 🔗 **Repositório GitHub** | [github.com/Iguinhuus/gs_final](https://github.com/Iguinhuus/gs_final) |
-| 🎥 **Vídeo no YouTube** | *Link do vídeo aqui* |
-| 🌐 **Deploy na Vercel** | *URL do deploy aqui* |
+| 🔗 **Repositório GitHub** | [github.com/Iguinhuus/orbitagro](https://github.com/Iguinhuus/orbitagro) |
+| 🎥 **Vídeo no YouTube** | [youtu.be/20tFD0GPqds](https://youtu.be/20tFD0GPqds) |
+| 🌐 **Deploy na Vercel** | [orbitagro.vercel.app](https://orbitagro.vercel.app) |
 
 > ⚠️ **Nota:** Atualizar os links acima após a publicação do vídeo e o deploy.
 
