@@ -65,7 +65,7 @@ export default function CulturaDetalhe() {
   };
 
   const remover = async () => {
-    if (!data || !window.confirm(`Remover "${data.nome}"? Esta ação não pode ser desfeita.`)) return;
+    if (!data) return;
     try {
       await deleteCultura(culturaId);
       mostrarNotificacao(`"${data.nome}" removida.`, "sucesso");

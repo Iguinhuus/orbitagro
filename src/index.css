@@ -25,6 +25,15 @@
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
 }
 
+/* ===== Remove Focus Outlines ===== */
+*,
+*:focus,
+*:focus-visible,
+*:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 /* ===== Global Base ===== */
 
 html {

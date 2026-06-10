@@ -104,6 +104,81 @@
       "descricao": "Cultivo de manga irrigada no Vale do Sao Francisco",
       "ultimaAtualizacao": "2026-06-09T05:20:17.302Z",
       "id": 7
+    },
+    {
+      "nome": "Soja Demo",
+      "tipo": "grãos",
+      "area": 50,
+      "localizacao": "Mato Grosso",
+      "status": "ativa",
+      "coordenadas": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "dataPlantio": "2025-01-01",
+      "descricao": "Demonstracao",
+      "ultimaAtualizacao": "2026-06-09T20:35:07.293Z",
+      "id": 8
+    },
+    {
+      "nome": "Milho Teste",
+      "tipo": "grãos",
+      "area": 150,
+      "localizacao": "Parana",
+      "status": "ativa",
+      "coordenadas": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "dataPlantio": "2025-01-01",
+      "descricao": "Demonstracao",
+      "ultimaAtualizacao": "2026-06-09T22:15:31.274Z",
+      "id": 9
+    },
+    {
+      "nome": "Trigo Master",
+      "tipo": "grãos",
+      "area": 200,
+      "localizacao": "Rio Grande do Sul",
+      "status": "ativa",
+      "coordenadas": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "dataPlantio": "2025-01-01",
+      "descricao": "",
+      "ultimaAtualizacao": "2026-06-09T22:30:51.732Z",
+      "id": 11
+    },
+    {
+      "nome": "Feijao",
+      "tipo": "grãos",
+      "area": 100,
+      "localizacao": "SP",
+      "status": "ativa",
+      "coordenadas": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "dataPlantio": "2025-01-01",
+      "descricao": "",
+      "ultimaAtualizacao": "2026-06-09T22:50:04.599Z",
+      "id": 12
+    },
+    {
+      "nome": "Milho Teste",
+      "tipo": "grãos",
+      "area": 200,
+      "localizacao": "Goias",
+      "status": "ativa",
+      "coordenadas": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "dataPlantio": "2025-03-15",
+      "descricao": "",
+      "ultimaAtualizacao": "2026-06-10T00:17:16.252Z",
+      "id": 13
     }
   ],
   "alertas": [
